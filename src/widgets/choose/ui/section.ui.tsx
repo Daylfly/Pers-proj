@@ -1,12 +1,7 @@
 import { cn } from "@/lib/utils";
 import Container from "@/components/shared/container";
-import dollar from "../../../../public/statics/dollar.png";
-import micro from "../../../../public/statics/micro.png";
-import home from "../../../../public/statics/home.png";
 import {ChooseData}  from './choose';
-
 import Image from "next/image";
-import Link from "next/link";
 
 interface IChooseProps {
     className?: string;

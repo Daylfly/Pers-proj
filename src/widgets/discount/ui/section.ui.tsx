@@ -1,8 +1,5 @@
 import { cn } from "@/lib/utils";
 import Container from "@/components/shared/container";
-import Image from "next/image";
-import Link from "next/link";
-import {ChooseData} from "@/widgets/choose/ui/choose";
 import {DiscountData}  from './discount';
 
 

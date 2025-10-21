@@ -22,7 +22,7 @@ export const SectionUi: React.FC<IFooterProps> = ({ className }) => {
                                 className="mb-4"
                             />
                             <p className="text-white/60 text-sm leading-relaxed max-w-prose">
-                                Middy is Volgograd's premier cyber lounge, launched in 2022. Featuring six sleek, high-comfort gaming zones, we blend cutting-edge tech with a futuristic vibe to create an immersive gaming experience like no other.
+                                Middy is Volgograd&apos;s premier cyber lounge, launched in 2022. Featuring six sleek, high-comfort gaming zones, we blend cutting-edge tech with a futuristic vibe to create an immersive gaming experience like no other.
                             </p>
                         </div>
 

@@ -2,9 +2,11 @@ import dollar from "../../../../public/statics/dollar.png";
 import micro from "../../../../public/statics/micro.png";
 import home from "../../../../public/statics/home.png";
 
+import { StaticImageData } from "next/image";
+
 export type Choose = {
     id: number;
-    icon: string; // или string, если используете пути
+    icon: StaticImageData;
     title: string;
     description: string;
 };

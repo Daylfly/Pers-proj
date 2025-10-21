@@ -1,7 +1,7 @@
-import {IconName} from "lucide-react/dynamic";
+import { IconType } from "react-icons";
 
 export interface IServices {
-    icon: string;
+    name: string;
+    icon: IconType;
     href?: string;
-    name?: IconName;
 }

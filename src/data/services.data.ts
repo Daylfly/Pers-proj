@@ -1,4 +1,4 @@
-import {IServices} from "@/types/services.interface";
+import {IServices} from "@/types/services-interface";
 import { LuShoppingCart, LuBookmark, LuCircleUser } from "react-icons/lu";
 import {APP_ROUTES} from "@/routes/app.route";
 

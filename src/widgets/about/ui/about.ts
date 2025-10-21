@@ -1,8 +1,9 @@
 import coll from "../../../../public/statics/coll.png";
+import { StaticImageData } from "next/image";
 
 export type About = {
     id: number;
-    icon: string; // или string, если используете пути
+    icon: StaticImageData;
     title: string;
     description: string;
 };
