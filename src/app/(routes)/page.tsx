@@ -13,10 +13,7 @@ export default function Home() {
         <AboutSection/><ChooseSection/>
           <DiscountSection/>
           <FaqSection/>
-          <Footer
-            columns={footerColumns}
-            copyright={footerCopyright}
-          />
+          <Footer/>
       </div>
   );
 }

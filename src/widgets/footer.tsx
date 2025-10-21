@@ -8,24 +8,15 @@ import { Input } from "@/components/ui/input";
 import logo from "../../public/statics/logo.svg";
 import { FooterProps } from "./footer/ui/footer.type";
 
-const Footer = ({
-                    logoAlt = "Middy Logo",
-                    description,
-                    columns,
-                    copyright,
-                    onSubscribe,
-                }: FooterProps) => {
-    const [email, setEmail] = useState('');
+    const Footer = ({
+                        logoAlt = "Middy Logo",
+                        description,
+                        columns,
+                        copyright,
+                        onSubscribe,
+                    }: FooterProps) => {
 
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        if (onSubscribe) {
-            onSubscribe(email);
-        } else {
-            console.log('Subscribed:', email);
-        }
-        setEmail('');
-    };
+
 
     return (
         <footer className="pl-14 pr-14 w-full bg-black text-white">
