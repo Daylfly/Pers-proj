@@ -2,7 +2,7 @@ import coll from "../../../../public/statics/coll.png";
 
 export type About = {
     id: number;
-    icon: any; // или string, если используете пути
+    icon: string; // или string, если используете пути
     title: string;
     description: string;
 };

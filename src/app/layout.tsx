@@ -20,13 +20,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html className={' scroll-smooth'} style={{scrollbehavior: "smooth"}} lang="en">
         <body
-            className={`${notoSans.variable} font-sans bg-black text-white/60 antialiased scroll-smooth`}
+            className={`${notoSans.variable} font-sans bg-black text-white/60 antialiased`}
         >
         <Header />
         {children}
         </body>
-        </html>
+
     );
 }

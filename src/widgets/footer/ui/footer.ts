@@ -1,11 +1,15 @@
+export type Footer = {
+    id: number;
+    title: string;
+    links: {
+        label: string;
+        href?: string;
+    }[];
+};
 
-import { FooterColumn } from "./../ui/footer.type";
-
-
-export const footerCopyright = "© 2024 Middy. All rights reserved.";
-
-export const footerColumns: FooterColumn[] = [
+export const FooterData: Footer[] = [
     {
+        id: 1,
         title: "Legal",
         links: [
             { label: "Privacy policy", href: "#" },
@@ -15,15 +19,17 @@ export const footerColumns: FooterColumn[] = [
         ],
     },
     {
+        id: 2,
         title: "Contact",
         links: [
-            { label: "+78005553535" }, // без href → просто текст
+            { label: "+78005553535" },
             { label: "middy@promo" },
             { label: "st. tripper 21" },
             { label: "@middy", href: "#" },
         ],
     },
     {
+        id: 3,
         title: "Company",
         links: [
             { label: "About US", href: "#" },
@@ -33,3 +39,5 @@ export const footerColumns: FooterColumn[] = [
         ],
     },
 ];
+
+export const footerCopyright = "© 2024 Middy. All rights reserved.";

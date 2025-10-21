@@ -4,7 +4,7 @@ import home from "../../../../public/statics/home.png";
 
 export type Choose = {
     id: number;
-    icon: any; // или string, если используете пути
+    icon: string; // или string, если используете пути
     title: string;
     description: string;
 };

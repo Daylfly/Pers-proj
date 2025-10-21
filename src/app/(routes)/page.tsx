@@ -3,8 +3,7 @@ import {AboutSection} from "@/widgets/about";
 import {ChooseSection} from "@/widgets/choose";
 import {DiscountSection} from "@/widgets/discount";
 import {FaqSection} from "@/widgets/faq";
-import Footer from "@/widgets/footer";
-import { footerColumns , footerCopyright } from "@/widgets/footer/ui/footer.data";
+import {FooterSection} from "@/widgets/footer";
 
 export default function Home() {
   return (
@@ -13,7 +12,7 @@ export default function Home() {
         <AboutSection/><ChooseSection/>
           <DiscountSection/>
           <FaqSection/>
-          <Footer/>
+          <FooterSection/>
       </div>
   );
 }

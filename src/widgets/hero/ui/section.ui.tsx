@@ -1,4 +1,3 @@
-import arrowIcon from "../../../../public/statics/icons/arrow1.svg"
 import {cn} from "@/lib/utils";
 import Container from "@/components/shared/container";
 import bgImage from "../../../../public/statics/bg-hero.png"
