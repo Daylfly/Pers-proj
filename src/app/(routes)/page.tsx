@@ -2,6 +2,7 @@ import {HeroSection} from "@/widgets/hero";
 import {AboutSection} from "@/widgets/about";
 import {ChooseSection} from "@/widgets/choose";
 import {DiscountSection} from "@/widgets/discount";
+import {ReservationSection} from "@/widgets/reservation";
 import {FaqSection} from "@/widgets/faq";
 import {FooterSection} from "@/widgets/footer";
 
@@ -11,6 +12,7 @@ export default function Home() {
         <HeroSection/>
         <AboutSection/><ChooseSection/>
           <DiscountSection/>
+          <ReservationSection/>
           <FaqSection/>
           <FooterSection/>
       </div>

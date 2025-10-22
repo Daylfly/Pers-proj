@@ -1,7 +1,6 @@
 import {cn} from "@/lib/utils";
 import Container from "@/components/shared/container";
 import bgImage from "../../../../public/statics/bg-hero.png"
-import {Button} from "@/components/ui/button";
 
 
 interface Props {
@@ -23,11 +22,13 @@ export const SectionUi: React.FC<Props> = ({ className }) => {
     </div>
 </div>
 <div className="scroll-smooth  flex gap-6 mt-6 items-center justify-center justify-self-center">
-    <Button variant={"default"}  className="h-14 px-10 text-lg scroll-smooth border-primary bg-transparent border-3 rounded-none">
-        <a href={"#Discount"} >Discount</a>
-        </Button>
-    <Button variant={"default"}  className="h-14 px-10 text-lg border-primary bg-transparent border-3 rounded-none">Promo</Button>
+    <a href={"#About"} className="h-14 px-10 text-lg scroll-smooth text-white border-primary bg-transparent border-3 rounded-none inline-flex items-center justify-center font-medium transition-all hover:bg-primary/10">
+        About Us
+    </a>
 
+    <a href={"#Faq"} className="h-14 px-10 text-lg border-primary text-white bg-transparent border-3 rounded-none inline-flex items-center justify-center font-medium transition-all hover:bg-primary/10">
+        Faq
+    </a>
 </div>
             </Container>
         </section>

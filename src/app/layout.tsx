@@ -20,12 +20,13 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <body
-            className={`${notoSans.variable} font-sans bg-black text-white/60 antialiased`}
-        >
-        <Header />
-        {children}
-        </body>
-
+        <html lang="en">
+            <body
+                className={`${notoSans.variable} font-sans bg-black text-white/60 antialiased`}
+            >
+                <Header />
+                {children}
+            </body>
+        </html>
     );
 }

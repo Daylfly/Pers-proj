@@ -10,7 +10,7 @@ interface IAboutProps {
 
 export const SectionUi: React.FC<IAboutProps> = ({ className }) => {
     return (
-        <section className={cn(className, "")}>
+        <section id="About" className={cn(className, "")}>
             <Container>
                 <div className="pt-10 sm:pt-16 md:pt-24 lg:pt-32">
                     <div className="grid gap-10  mx-auto">

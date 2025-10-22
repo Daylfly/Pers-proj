@@ -19,9 +19,9 @@ export const SectionUi: React.FC<IFooterProps> = ({ className }) => {
                             <Image
                                 src={logo}
                                 alt="Middy Logo"
-                                className="mb-4"
+                                className="w-30 h-30 sm:w-35 sm:h-35 md:w-50 md:h-50 lg:w-auto lg:h-auto mb-4"
                             />
-                            <p className="text-white/60 text-sm leading-relaxed max-w-prose">
+                            <p className="text-white/60 text-md leading-relaxed max-w-prose">
                                 Middy is Volgograd&apos;s premier cyber lounge, launched in 2022. Featuring six sleek, high-comfort gaming zones, we blend cutting-edge tech with a futuristic vibe to create an immersive gaming experience like no other.
                             </p>
                         </div>
@@ -33,10 +33,10 @@ export const SectionUi: React.FC<IFooterProps> = ({ className }) => {
                                     key={item.id}
                                     className="text-start"
                                 >
-                                    <h3 className="text-lg font-bold mb-4 text-white">
+                                    <h3 className="text-xl font-bold mb-4 text-white">
                                         {item.title}
                                     </h3>
-                                    <ul className="space-y-2 text-sm">
+                                    <ul className="space-y-2 text-md">
                                         {item.links.map((link, linkIndex) => (
                                             <li key={linkIndex}>
                                                 {link.href ? (

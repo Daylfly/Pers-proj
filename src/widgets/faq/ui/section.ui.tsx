@@ -9,7 +9,7 @@ interface IFaqProps {
 
 export const SectionUi: React.FC<IFaqProps> = ({ className }) => {
     return (
-        <section className={cn(className, "")}>
+        <section id="Faq" className={cn(className, "")}>
             <Container>
                     <div className="">
                         <Accordion  />

@@ -5,26 +5,23 @@ import {APP_ROUTES} from "@/routes/app.route";
 export const MENU_DATA: Menu[] = [
     {
         label:"GAME ZONE",
-        href: APP_ROUTES.home(),
+        href: "#",
     },
     {
         label:"PC Hardware",
-        href: APP_ROUTES.about(),
-    },
-    {
-        label:"Price",
-        href: APP_ROUTES.foods(),
+        href: "#About",
     },
     {
         label:"Booking",
-        href: APP_ROUTES.foods(),
+        href: "#Booking",
     },
+
     {
         label:"Contacts",
-        href: APP_ROUTES.foods(),
+        href: "#Footer",
     },
     {
         label:"Faq",
-        href: APP_ROUTES.foods(),
+        href: "#Faq",
     },
 ];

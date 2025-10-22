@@ -10,9 +10,13 @@ import logo from "../../public/statics/logo.svg";
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
-        <header className="w-full py-4 md:py-8 lg:py-14" id='header'>
+        <header className="w-full " id='header'>
             <Container className="w-full flex items-center gap-x-16 justify-between">
-                <Image src={logo} alt="Логотип сайта" className="" />
+                <Image 
+                    src={logo} 
+                    alt="Логотип сайта" 
+                    className="w-30 h-30 sm:w-35 sm:h-35 md:w-50 md:h-50 lg:w-auto lg:h-auto"
+                />
                 <NavMenu className=" hidden md:block items-end" />
                 <button 
                     onClick={() => setMenuOpen(true)}

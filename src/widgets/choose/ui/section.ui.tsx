@@ -9,7 +9,7 @@ interface IChooseProps {
 
 export const SectionUi: React.FC<IChooseProps> = ({ className }) => {
     return (
-        <section className={cn(className, "")}>
+        <section id="Choose" className={cn(className, "")}>
             <Container>
                 <div className="pt-10 sm:pt-16 md:pt-24 lg:pt-32">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 justify-items-center">
