@@ -41,7 +41,6 @@ export const DoctorsUi = () => {
                                 width={500}
                                 height={300}
                                 className="w-full h-[280px] object-cover"
-                                unoptimized
                             />
                             <div className="p-5 space-y-2">
                                 <h3 className="font-medium text-black text-lg">{doc.name}</h3>
