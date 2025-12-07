@@ -20,13 +20,13 @@ export const DoctorsUi = () => {
                     ref={prevRef}
                     className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-6 h-6 flex items-center justify-center text-gray-600 hover:text-gray-100"
                 >
-                    <span className="block w-6 h-6 border-t-4 border-l-4 border-gray-900 rotate-317 -translate-x-[1px] -translate-y-[1px]"></span>
+                    {/*<span className="block w-6 h-6 border-t-4 border-l-4 border-gray-900 rotate-317 -translate-x-[1px] -translate-y-[1px]"></span>*/}
                 </button>
                 <button
                     ref={nextRef}
                     className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-6 h-6 flex items-center justify-center text-gray-600 hover:text-gray-700"
                 >
-                    <span className="block w-6 h-6 border-t-4 border-l-4 border-gray-900 rotate-135 -translate-x-[1px] -translate-y-[1px]"></span>
+                    {/*<span className="block w-6 h-6 border-t-4 border-l-4 border-gray-900 rotate-135 -translate-x-[1px] -translate-y-[1px]"></span>*/}
                 </button>
 
                 <Slider
@@ -42,31 +42,27 @@ export const DoctorsUi = () => {
                                 height={300}
                                 className="w-full h-[280px] object-cover"
                             />
-
                             <div className="p-5 space-y-2">
                                 <h3 className="font-medium text-black text-lg">{doc.name}</h3>
                                 <p className="text-gray-500 text-sm">{doc.position}</p>
-
                                 <span className="inline-block bg-gray-200 text-gray-950 px-3 py-1 rounded text-xs">
-                  {doc.experience}
-                </span>
-
+          {doc.experience}
+        </span>
                                 <p className="text-xs text-gray-500">{doc.degree}</p>
                             </div>
                         </div>
                     ))}
                     slidesPerView={1}
+                    spaceBetween={30}
                     breakpoints={{
-                        640: { slidesPerView: 1.3 },
-                        768: { slidesPerView: 2 },
-                        1024: { slidesPerView: 3 },
+                        640: { slidesPerView: 1.3, spaceBetween: 20 },
+                        768: { slidesPerView: 2, spaceBetween: 30 },
+                        1024: { slidesPerView: 3, spaceBetween: 30 },
                     }}
-                    navigation={{ prevEl: prevRef.current, nextEl: nextRef.current }}
+                    navigation={true} // ← просто true
                     className="px-10"
-                    onBeforeInit={(swiper: any) => {
-                        swiper.params.navigation.prevEl = prevRef.current;
-                        swiper.params.navigation.nextEl = nextRef.current;
-                    }}
+                    // ← УДАЛИЛ onBeforeInit и кастомный navigation объект
+
                 />
             </section>
         </Container>

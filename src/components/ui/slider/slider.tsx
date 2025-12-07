@@ -1,5 +1,5 @@
 "use client";
-
+import type { SwiperOptions } from "swiper/types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
@@ -10,8 +10,7 @@ interface SliderProps {
     slides: React.ReactNode[];
     spaceBetween?: number;
     slidesPerView?: number;
-    breakpoints?: Record<string, any>;
-    className?: string;
+    breakpoints?: SwiperOptions["breakpoints"];    className?: string;
     navigation?: boolean;
 }
 

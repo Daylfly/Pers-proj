@@ -1,8 +1,6 @@
 import { cn } from "@/lib/utils";
 import Container from "@/components/shared/container";
-import Image from "next/image";
-import { FooterData, footerCopyright } from './footer';
-import logo from "../../../../public/statics/logo.svg";
+import { footerCopyright } from './footer';
 
 interface IFooterProps {
     className?: string;
@@ -16,7 +14,7 @@ export const SectionUi: React.FC<IFooterProps> = ({ className }) => {
 
                         {/* Копирайт */}
                         <div className="pt-4 border-t border-white/10">
-                            <p className="text-black/40 text-sm text-center">
+                            <p className="text-white/40 text-sm text-center">
                                 {footerCopyright}
                             </p>
                         </div>

@@ -44,7 +44,7 @@ export const ServiceUi: React.FC<IServiceProps> = ({ className }) => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                     {ServiceData.map((service, index) => {
-                        const Icon = icons[service.icon];
+                        const Icon = icons[service.icon as keyof typeof icons];
                         return (
                             <div
                                 key={index}
