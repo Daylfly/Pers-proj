@@ -1,7 +1,6 @@
 "use client";
 
 import { Slider } from "@/components/ui/slider/slider";
-import Image from "next/image";
 import { DoctorsData } from "./doctors";
 import Container from "@/components/shared/container";
 import { useRef } from "react";
@@ -35,11 +34,9 @@ export const DoctorsUi = () => {
                             key={i}
                             className="rounded-xl overflow-hidden bg-white shadow-sm border"
                         >
-                            <Image
+                            <img
                                 src={doc.image}
                                 alt={doc.name}
-                                width={500}
-                                height={300}
                                 className="w-full h-[280px] object-cover"
                             />
                             <div className="p-5 space-y-2">

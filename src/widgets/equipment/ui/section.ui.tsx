@@ -1,38 +1,25 @@
 import { equipmentData } from "./equipment";
 import Container from "@/components/shared/container";
-import Image from "next/image";
 
 // Интерфейс с readonly features — теперь типы совпадают на 100%
 interface EquipmentItem {
     title: string;
     model: string;
     description: string;
-    features?: readonly string[];  // ← вот это ключевое изменение!
 }
 
 interface EquipmentCardProps {
     title: string;
     model: string;
     description: string;
-    features?: readonly string[];  // синхронизировали с EquipmentItem
 }
 
-const EquipmentCard = ({ title, model, description, features }: EquipmentCardProps) => (
+const EquipmentCard = ({ title, model, description }: EquipmentCardProps) => (
     <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
         <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
         <p className="text-lg text-gray-600 mb-3">{model}</p>
         <p className="text-gray-600 leading-relaxed">{description}</p>
-
-        {/* Выводим features, если они есть */}
-        {features && features.length > 0 && (
-            <ul className="mt-4 space-y-2">
-                {features.map((feature, idx) => (
-                    <li key={idx} className="text-sm text-gray-600 flex items-center">
-                        <span className="mr-2 text-green-500">✓</span> {feature}
-                    </li>
-                ))}
-            </ul>
-        )}
+        
     </div>
 );
 
@@ -54,23 +41,17 @@ export const EquipmentSectionUI = () => {
                     {/* Большое фото слева/справа */}
                     <div className="grid md:grid-cols-2 gap-6 lg:gap-10 mb-16 lg:mb-20">
                         <div className="rounded-3xl overflow-hidden shadow-lg">
-                            <Image
+                            <img
                                 src="/statics/eqip/l.png"
                                 alt="МРТ аппарат"
-                                width={800}
-                                height={600}
                                 className="w-full h-full object-cover"
-                                priority
                             />
                         </div>
                         <div className="rounded-3xl overflow-hidden shadow-lg">
-                            <Image
+                            <img
                                 src="/statics/eqip/r.png"
                                 alt="Операционная с С-дугой"
-                                width={800}
-                                height={600}
                                 className="w-full h-full object-cover"
-                                priority
                             />
                         </div>
                     </div>
