@@ -3,6 +3,7 @@
 import { Slider } from "@/components/ui/slider/slider";
 import { DoctorsData } from "./doctors";
 import Container from "@/components/shared/container";
+import Image from "next/image";
 import { useRef } from "react";
 
 export const DoctorsUi = () => {
@@ -34,9 +35,11 @@ export const DoctorsUi = () => {
                             key={i}
                             className="rounded-xl overflow-hidden bg-white shadow-sm border"
                         >
-                            <img
+                            <Image
                                 src={doc.image}
                                 alt={doc.name}
+                                width={500}
+                                height={300}
                                 className="w-full h-[280px] object-cover"
                             />
                             <div className="p-5 space-y-2">
