@@ -4,24 +4,21 @@ import {APP_ROUTES} from "@/routes/app.route";
 
 export const MENU_DATA: Menu[] = [
     {
-        label:"GAME ZONE",
-        href: "#",
+        label:"Услуги",
+        href: "#Contract",
     },
     {
-        label:"PC Hardware",
-        href: "#About",
+        label:"Цены",
+        href: "#price",
     },
     {
-        label:"Booking",
-        href: "#Booking",
+        label:"Наши врачи",
+        href: "#doctor",
     },
 
     {
-        label:"Contacts",
-        href: "#Footer",
+        label:"Контакты",
+        href: "#contact",
     },
-    {
-        label:"Faq",
-        href: "#Faq",
-    },
+
 ];

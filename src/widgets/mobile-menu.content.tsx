@@ -9,7 +9,7 @@ interface MobileMenuContentProps {
 
 const MobileMenuContent: React.FC<MobileMenuContentProps> = ({ onClose }) => {
     return (
-        <div className="absolute top-0 right-0 h-full w-80 max-w-[85%] bg-white shadow-xl p-6 flex flex-col gap-6 overflow-auto">
+        <div className="absolute top-0 right-0 h-full w-80 max-w-[85%] bg-black shadow-xl p-6 flex flex-col gap-6 overflow-auto">
             <nav className="w-full">
                 <ul className="flex flex-col gap-4 list-none">
                     {MENU_DATA.map((item, index) => (
@@ -21,9 +21,7 @@ const MobileMenuContent: React.FC<MobileMenuContentProps> = ({ onClose }) => {
                     ))}
                 </ul>
             </nav>
-            <Button className="w-full rounded-none" size="lg" variant="default" onClick={onClose}>
-                Калькулятор ремонта
-            </Button>
+
         </div>
     );
 };

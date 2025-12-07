@@ -1,0 +1,1 @@
+export { EquipmentSectionUI as EquipmentSection } from "./ui/section.ui";
