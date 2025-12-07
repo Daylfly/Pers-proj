@@ -1,8 +1,6 @@
 import { equipmentData } from "./equipment";
 import Container from "@/components/shared/container";
 import Image from "next/image";
-import equipmentLeft from "../../../../public/statics/eqip/l.png";
-import equipmentRight from "../../../../public/statics/eqip/r.png";
 
 // Интерфейс с readonly features — теперь типы совпадают на 100%
 interface EquipmentItem {
@@ -45,22 +43,24 @@ export const EquipmentSectionUI = () => {
                     <div className="grid md:grid-cols-2 gap-6 lg:gap-10 mb-16 lg:mb-20">
                         <div className="rounded-3xl overflow-hidden shadow-lg">
                             <Image
-                                src={equipmentLeft}
+                                src="/statics/eqip/l.png"
                                 alt="МРТ аппарат"
                                 width={800}
                                 height={600}
                                 className="w-full h-full object-cover"
                                 priority
+                                unoptimized
                             />
                         </div>
                         <div className="rounded-3xl overflow-hidden shadow-lg">
                             <Image
-                                src={equipmentRight}
+                                src="/statics/eqip/r.png"
                                 alt="Операционная с С-дугой"
                                 width={800}
                                 height={600}
                                 className="w-full h-full object-cover"
                                 priority
+                                unoptimized
                             />
                         </div>
                     </div>
