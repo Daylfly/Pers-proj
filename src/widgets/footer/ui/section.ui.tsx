@@ -8,13 +8,13 @@ interface IFooterProps {
 
 export const SectionUi: React.FC<IFooterProps> = ({ className }) => {
     return (
-        <footer id={"Footer"} className={cn("w-full  text-white", className)}>
+        <footer className={cn("w-full  text-white", className)}>
             <Container>
                 <div className="pt-10 sm:pt-16 md:pt-24 lg:pt-32">
 
                         {/* Копирайт */}
                         <div className="pt-4 border-t border-white/10">
-                            <p className="text-white/40 text-sm text-center">
+                            <p className="text-black/40 text-sm text-center">
                                 {footerCopyright}
                             </p>
                         </div>

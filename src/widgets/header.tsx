@@ -1,6 +1,7 @@
 "use client"
 import React, {useState} from 'react';
 import Image from "next/image";
+import Link from "next/link";
 import Container from "@/components/shared/container";
 import NavMenu from "@/widgets/nav-menu";
 import MobileMenu from "@/widgets/mobile-menu";
@@ -21,19 +22,22 @@ const Header = () => {
                         alt="Логотип сайта"
                         className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32"
                         priority
-                        sizes="120px"
+                        sizes="100px"
                     />
                 </div>
 
                 {/* Основное меню и кнопки - десктоп */}
-                <div className="hidden lg:flex items-center gap-6 xl:gap-8">
+                <div className="hidden lg:flex items-center gap-6 xl:gap-8 ">
                     {/* Навигационное меню */}
                     <NavMenu className="flex items-center gap-6 xl:gap-8" />
 
                     {/* Кнопки CTA */}
-                    <div className="flex items-center gap-4 sm:gap-6">
-                        <Button
-                            className={`
+
+                </div>
+                <div className="flex items-center gap-4 sm:gap-6 hidden lg:flex items-center gap-6 xl:gap-8">
+                    <Button
+                        asChild
+                        className={`
                                 h-11 sm:h-12 px-5 sm:px-6 lg:px-8 
                                 text-sm sm:text-base lg:text-lg lg:text-2xl 
                                 bg-transparent text-black border-3 border-zinc-900 
@@ -41,24 +45,11 @@ const Header = () => {
                                 transition-all duration-300 
                                 hover:scale-105 active:scale-95
                             `}
-                        >
-                            Записаться
-                        </Button>
-                        <Button
-                            className={`
-                                h-11 sm:h-12 px-5 sm:px-6 lg:px-8 
-                                text-sm sm:text-base lg:text-lg lg:text-2xl 
-                                bg-zinc-950 text-white border-3 border-zinc-900 
-                                hover:bg-zinc-800 cursor-pointer 
-                                transition-all duration-300 
-                                hover:scale-105 active:scale-95 shadow-sm
-                            `}
-                        >
-                            Личный кабинет
-                        </Button>
-                    </div>
-                </div>
+                    >
+                        <Link href="#record">Записаться</Link>
+                    </Button>
 
+                </div>
                 {/* Мобильная кнопка меню */}
                 <button
                     onClick={() => setMenuOpen(true)}

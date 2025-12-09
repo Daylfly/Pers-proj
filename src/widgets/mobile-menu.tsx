@@ -53,6 +53,7 @@ const MobileMenu = ({ isOpen, onClose }: IMobileMenuProps) => {
 
                         ))}
                         <Button
+                            asChild
                             className={`
                                 h-11 sm:h-12 px-5 sm:px-6 lg:px-8 
                                 text-sm sm:text-base lg:text-lg lg:text-2xl 
@@ -62,17 +63,17 @@ const MobileMenu = ({ isOpen, onClose }: IMobileMenuProps) => {
                                 hover:scale-105 active:scale-95
                             `}
                         >
-                            Записаться
+                            <Link href="#record" onClick={onClose}>Записаться</Link>
                         </Button>
-                        <Button
-                            className={`
-                                h-11 sm:h-12 px-5 sm:px-6 lg:px-8 
-                                text-sm sm:text-base lg:text-lg lg:text-2xl 
-                                bg-zinc-950 text-white border-3 border-zinc-900 
-                                hover:bg-zinc-800 cursor-pointer 
-                                transition-all duration-300 
-                                hover:scale-105 active:scale-95 shadow-sm
-                            `}>Личный кабинет</Button>
+                        {/*<Button*/}
+                        {/*    className={`*/}
+                        {/*        h-11 sm:h-12 px-5 sm:px-6 lg:px-8 */}
+                        {/*        text-sm sm:text-base lg:text-lg lg:text-2xl */}
+                        {/*        bg-zinc-950 text-white border-3 border-zinc-900 */}
+                        {/*        hover:bg-zinc-800 cursor-pointer */}
+                        {/*        transition-all duration-300 */}
+                        {/*        hover:scale-105 active:scale-95 shadow-sm*/}
+                        {/*    `}>Личный кабинет</Button>*/}
                     </menu>
                 </div>
             </aside>

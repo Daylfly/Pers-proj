@@ -30,7 +30,7 @@ interface IServiceProps {
 
 export const ServiceUi: React.FC<IServiceProps> = ({ className }) => {
     return (
-        <section id="Services" className={cn("py-8 md:py-12 lg:py-16", className)}>
+        <section id="Contract" className={cn("py-8 md:py-12 lg:py-16", className)}>
             <Container className="mt-4 sm:mt-6 md:mt-10">
 
                 <div className="text-center mb-10 sm:mb-12 md:mb-16">
@@ -50,7 +50,7 @@ export const ServiceUi: React.FC<IServiceProps> = ({ className }) => {
                                 key={index}
                                 className="p-6 bg-gray-50 border rounded-xl transition hover:shadow-md"
                             >
-                                <div className="w-12 h-12 rounded-lg bg-blue-700 flex items-center justify-center mb-4">
+                                <div className="w-12 h-12 rounded-lg bg-blue-700/70 flex items-center justify-center mb-4">
                                     <Icon className="w-8 h-8 text-black" />
                                 </div>
 

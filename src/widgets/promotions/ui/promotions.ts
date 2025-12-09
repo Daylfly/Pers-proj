@@ -17,7 +17,7 @@ export const promotionsData = {
             badge: "Популярное",
             discount: "%",
             title: "Комплексное обследование",
-            description: "Полное обследование организма со скидкой 30%",
+            description: "Полное обследование организма со скидкой 30% и бонусной системой",
             footer: "Постоянная акция",
             permanent: true,
         },

@@ -6,16 +6,24 @@ import {DoctorsSection} from "@/widgets/doctors";
 import {EquipmentSection} from "@/widgets/equipment";
 import {PricesSection} from "@/widgets/price";
 import {PromotionsSection} from "@/widgets/promotions";
+import {ReviewsSection} from "@/widgets/reviews";
+import ContactSection from "@/widgets/contact";
+import {BlogSection} from "@/widgets/blog";
+import {RecordSection} from "@/widgets/record";
 
 export default function Home() {
   return (
       <div className="scroll-smooth">
           <HeroSection/>
           <ServiceSection/>
+          <PricesSection/>
           <DoctorsSection/>
           <EquipmentSection/>
-          <PricesSection/>
           <PromotionsSection/>
+          <ReviewsSection/>
+<ContactSection/>
+          <BlogSection/>
+          <RecordSection/>
           <FooterSection/>
       </div>
   );
