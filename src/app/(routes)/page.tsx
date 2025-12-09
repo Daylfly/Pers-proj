@@ -23,7 +23,7 @@ export default function Home() {
           <ReviewsSection/>
 <ContactSection/>
           <BlogSection/>
-          <RecordSection/>
+          <RecordSection/>тзь
           <FooterSection/>
       </div>
   );
