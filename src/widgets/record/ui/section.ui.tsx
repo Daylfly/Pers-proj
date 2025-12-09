@@ -97,7 +97,7 @@ export const RecordUi: React.FC<RecordProps> = ({ className, onSubmit }) => {
                             {/* Кнопка */}
                             <button
                                 type="submit"
-                                className="w-full bg-black text-white py-3 rounded-full text-lg"
+                                className="w-full cursor-pointer bg-black text-white py-3 rounded-full text-lg"
                             >
                                 Записаться
                             </button>

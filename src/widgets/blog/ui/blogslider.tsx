@@ -3,12 +3,8 @@
 import { Slider } from "@/components/ui/slider/slider";
 import Container from "@/components/shared/container";
 import Image from "next/image";
-import { useRef } from "react";
 
 export const BlogUi = () => {
-    const prevRef = useRef<HTMLButtonElement>(null);
-    const nextRef = useRef<HTMLButtonElement>(null);
-
     const posts = [
         {
             id: 1,
@@ -55,17 +51,6 @@ export const BlogUi = () => {
                 <p className="text-center text-gray-600 mb-8">
                     Полезные статьи о здоровье от наших специалистов
                 </p>
-
-                {/* Кнопки навигации */}
-                <button
-                    ref={prevRef}
-                    className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-6 h-6 text-gray-900"
-                />
-
-                <button
-                    ref={nextRef}
-                    className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-6 h-6 text-gray-900"
-                />
 
                 <Slider
                     autoplay={{ delay: 4000, disableOnInteraction: false }}
@@ -119,10 +104,6 @@ export const BlogUi = () => {
                     breakpoints={{
                         768: { slidesPerView: 2, spaceBetween: 30 },
                     }}
-
-                    navigationPrevRef={prevRef}
-                    navigationNextRef={nextRef}
-
                     className="px-10"
                 />
             </section>
