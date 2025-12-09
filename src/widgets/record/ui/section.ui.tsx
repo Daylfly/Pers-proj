@@ -27,7 +27,7 @@ export const RecordUi: React.FC<RecordProps> = ({ className, onSubmit }) => {
     };
 
     return (
-        <section id="record" className={cn("py-20 ", className)}>
+        <section id="record" className={cn("py-16 sm:py-20 lg:py-[120px]", className)}>
             <Container>
                 <h2 className="text-center text-4xl md:text-5xl font-semibold mb-14">
                     Запись

@@ -30,7 +30,7 @@ interface IServiceProps {
 
 export const ServiceUi: React.FC<IServiceProps> = ({ className }) => {
     return (
-        <section id="Contract" className={cn("py-8 md:py-12 lg:py-16", className)}>
+        <section id="Contract" className={cn("py-16 sm:py-20 lg:py-[120px]", className)}>
             <Container className="mt-4 sm:mt-6 md:mt-10">
 
                 <div className="text-center mb-10 sm:mb-12 md:mb-16">
@@ -42,7 +42,7 @@ export const ServiceUi: React.FC<IServiceProps> = ({ className }) => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[25px]">
                     {ServiceData.map((service, index) => {
                         const Icon = icons[service.icon as keyof typeof icons];
                         return (

@@ -61,7 +61,7 @@ export const ReviewsUi = () => {
 
     return (
         <Container className="bg-gray-50">
-            <section className="py-16 md:py-20">
+            <section className="py-16 sm:py-20 lg:py-[120px]">
                 <h2 className="text-center text-4xl md:text-5xl font-bold text-gray-900 mb-12">
                     Отзывы клиентов
                 </h2>
@@ -72,7 +72,7 @@ export const ReviewsUi = () => {
                     loop={true}
                     navigation={false}
                     slidesPerView={1}
-                    spaceBetween={20}
+                    spaceBetween={25}
                     breakpoints={{
                         640: { slidesPerView: 1.15 },
                         768: { slidesPerView: 2 },

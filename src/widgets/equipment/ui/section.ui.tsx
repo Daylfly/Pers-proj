@@ -22,7 +22,7 @@ export const EquipmentSectionUI = () => {
 
     return (
         <Container>
-            <section className="py-16 lg:py-24 px-4 bg-gray-50">
+            <section className="py-16 sm:py-20 lg:py-[120px] px-4 bg-gray-50">
                 <div className="max-w-7xl mx-auto">
 
                     {/* Заголовок */}
@@ -53,7 +53,7 @@ export const EquipmentSectionUI = () => {
 
                     {/* Карточки оборудования */}
                     {/* Все карточки в одной сетке */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[25px]">
                         {/* Заголовки делаем как полноценные карточки-заголовки, занимающие всю ширину колонки */}
                         <div className="lg:col-span-1">
                             <h3 className="text-2xl lg:text-3xl font-semibold text-center mb-10 text-gray-800">

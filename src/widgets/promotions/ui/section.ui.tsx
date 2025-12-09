@@ -8,7 +8,7 @@ export const PromotionsSectionUI = () => {
     const { title, subtitle, items } = promotionsData;
 
     return (
-            <Container className=" ">
+            <Container className="py-16 sm:py-20 lg:py-[120px]">
                 <div className="max-w-6xl mx-auto">
                     {/* Заголовок */}
                     <div className="text-center mb-12 lg:mb-16">
@@ -19,7 +19,7 @@ export const PromotionsSectionUI = () => {
                     </div>
 
                     {/* Карточки акций*/}
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid md:grid-cols-2 gap-[25px]">
             {items.map((item, idx) => (
               <div
                 key={idx}

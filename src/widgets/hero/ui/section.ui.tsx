@@ -10,7 +10,7 @@ interface IHeroProps {
 
 export const SectionUi: React.FC<IHeroProps> = ({ className }) => {
     return (
-        <section id={"Hero"} className={cn("py-8 md:py-12 lg:py-16", className)}>
+        <section id={"Hero"} className={cn("py-16 sm:py-20 lg:py-[120px]", className)}>
             <Container className={"mt-4 sm:mt-6 md:mt-10"}>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-start lg:items-center">
                     {/* ТЕКСТ - всегда первый */}

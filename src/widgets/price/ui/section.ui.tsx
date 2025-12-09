@@ -14,7 +14,7 @@ export const PricesSectionUI = () => {
     const { title, subtitle, categories } = pricesData;
 
     return (
-        <section id="price" className="py-16 lg:py-24 bg-gray-50">
+        <section id="price" className="py-16 sm:py-20 lg:py-[120px] bg-gray-50">
             <Container>
                 <div className="max-w-6xl mx-auto">
                     {/* Заголовок */}
@@ -26,7 +26,7 @@ export const PricesSectionUI = () => {
                     </div>
 
                     {/* Аккордеоны — ЗАКРЫТЫ ПО УМОЛЧАНИЮ */}
-                    <div className="grid gap-6">
+                    <div className="grid gap-[25px]">
                         {categories.map((category) => (
                             <div
                                 key={category.title}

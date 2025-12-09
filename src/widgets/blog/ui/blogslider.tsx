@@ -48,7 +48,7 @@ export const BlogUi = () => {
 
     return (
         <Container>
-            <section className="py-12 md:py-16 relative">
+            <section className="py-16 sm:py-20 lg:py-[120px] relative">
                 <h2 className="text-center text-4xl font-semibold mb-3">Блог</h2>
                 <p className="text-center text-gray-600 mb-8">
                     Полезные статьи о здоровье от наших специалистов
@@ -102,9 +102,9 @@ export const BlogUi = () => {
                     ))}
 
                     slidesPerView={1}
-                    spaceBetween={30}
+                    spaceBetween={25}
                     breakpoints={{
-                        768: { slidesPerView: 2, spaceBetween: 30 },
+                        768: { slidesPerView: 2, spaceBetween: 25 },
                     }}
                     className="px-10"
                 />

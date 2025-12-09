@@ -27,7 +27,7 @@ export default function ContactsSection() {
     ];
 
     return (
-        <section id="contact" className="py-12 md:py-20 bg-gray-50">
+        <section id="contact" className="py-16 sm:py-20 lg:py-[120px] bg-gray-50">
             <Container>
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-gray-800">
@@ -39,7 +39,7 @@ export default function ContactsSection() {
                 </div>
 
                 {/* Карточки контактов */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[25px] max-w-6xl mx-auto">
                     {contacts.map((item, index) => {
                         const Icon = item.icon;
 

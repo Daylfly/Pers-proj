@@ -8,7 +8,7 @@ import Image from "next/image";
 export const DoctorsUi = () => {
     return (
         <Container>
-            <section id="doctor" className="py-12 md:py-16 relative">
+            <section id="doctor" className="py-16 sm:py-20 lg:py-[120px] relative">
                 <h2 className="text-center text-4xl text-black font-semibold mb-6">Наши врачи</h2>
 
                 <Slider
@@ -43,11 +43,11 @@ export const DoctorsUi = () => {
                         </div>
                     ))}
                     slidesPerView={1}
-                    spaceBetween={30}
+                    spaceBetween={25}
                     breakpoints={{
                         640: { slidesPerView: 1.3, spaceBetween: 20 },
-                        768: { slidesPerView: 2, spaceBetween: 30 },
-                        1024: { slidesPerView: 3.01, spaceBetween: 20 },
+                        768: { slidesPerView: 2, spaceBetween: 25 },
+                        1024: { slidesPerView: 3.01, spaceBetween: 25 },
                     }}
                     className="px-10"
 
