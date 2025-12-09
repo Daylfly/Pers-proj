@@ -3,6 +3,8 @@
 import { Slider } from "@/components/ui/slider/slider";
 import Container from "@/components/shared/container";
 import Image from "next/image";
+import doctorTeamImg from "@/../public/statics/blog/doctor-team.png";
+import labImg from "@/../public/statics/blog/lab.png";
 
 export const BlogUi = () => {
     const posts = [
@@ -13,7 +15,7 @@ export const BlogUi = () => {
             text: "Простые правила, которые помогут сохранить здоровье сердца на долгие годы. Рекомендации от наших кардиологов.",
             author: "Иванова Е.С.",
             date: "18 ноября 2025",
-            img: "/statics/blog/doctor-team.png",
+            img: doctorTeamImg,
         },
         {
             id: 2,
@@ -22,7 +24,7 @@ export const BlogUi = () => {
             text: "Разбираемся в различиях между методами лучевой диагностики и определяем, когда какое исследование наиболее эффективно.",
             author: "Иванова Е.С.",
             date: "22 ноября 2025",
-            img: "/statics/blog/lab.png",
+            img: labImg,
         },
         {
         id: 3,
@@ -31,7 +33,7 @@ export const BlogUi = () => {
             text: "Простые правила, которые помогут сохранить здоровье сердца на долгие годы. Рекомендации от наших кардиологов.",
             author: "Иванова Е.С.",
             date: "18 ноября 2025",
-            img: "/statics/blog/doctor-team.png",
+            img: doctorTeamImg,
     },
         {
             id: 4,
@@ -40,7 +42,7 @@ export const BlogUi = () => {
             text: "Разбираемся в различиях между методами лучевой диагностики и определяем, когда какое исследование наиболее эффективно.",
             author: "Иванова Е.С.",
             date: "22 ноября 2025",
-            img: "/statics/blog/lab.png",
+            img: labImg,
         },
     ];
 

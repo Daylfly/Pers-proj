@@ -7,6 +7,7 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { RecordProps, RecordFormValues } from "./record";
 import Container from "@/components/shared/container";
+import doctorImg from "@/../public/statics/Doctor.png";
 
 export const RecordUi: React.FC<RecordProps> = ({ className, onSubmit }) => {
     const [values, setValues] = useState<RecordFormValues>({
@@ -107,7 +108,7 @@ export const RecordUi: React.FC<RecordProps> = ({ className, onSubmit }) => {
                     {/* Фото врача */}
                     <div className="relative">
                         <Image
-                            src="/statics/Doctor.png" // путь относительно public
+                            src={doctorImg}
                             alt="doctor"
                             width={600}   // указываем реальные размеры
                             height={800}  // указываем реальные размеры
