@@ -23,7 +23,7 @@ export const EquipmentSectionUI = () => {
     return (
         <Container>
             <section className="py-16 sm:py-20 lg:py-[120px] px-4 bg-gray-50">
-                <div className="max-w-7xl mx-auto">
+                <div className="w-full">
 
                     {/* Заголовок */}
                     <div className="text-center mb-12 lg:mb-16">

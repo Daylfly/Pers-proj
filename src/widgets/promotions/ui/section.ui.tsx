@@ -9,7 +9,7 @@ export const PromotionsSectionUI = () => {
 
     return (
             <Container className="py-16 sm:py-20 lg:py-[120px]">
-                <div className="max-w-6xl mx-auto">
+                <div className="w-full">
                     {/* Заголовок */}
                     <div className="text-center mb-12 lg:mb-16">
                         <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">

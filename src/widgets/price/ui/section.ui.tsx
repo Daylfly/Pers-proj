@@ -16,7 +16,7 @@ export const PricesSectionUI = () => {
     return (
         <section id="price" className="py-16 sm:py-20 lg:py-[120px] bg-gray-50">
             <Container>
-                <div className="max-w-6xl mx-auto">
+                <div className="w-full">
                     {/* Заголовок */}
                     <div className="text-center mb-12 lg:mb-16">
                         <h2 className="text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">
